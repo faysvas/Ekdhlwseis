@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Overlay example</title>
+<script src="jquery.js"></script>
+<link rel="stylesheet" href="bootstrap.min.css">
+<script src="bootstrap.min.js"></script>
+<link rel="stylesheet" href="ol.css" type="text/css">
+<script src="ol.js"></script>
+<link rel="stylesheet" href="overlay.css">
+<style>
+#marker {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #088;
+  border-radius: 10px;
+  background-color: #0FF;
+  opacity: 0.5;
+}
+#vienna {
+  text-decoration: none;
+  color: white;
+  font-size: 11pt;
+  font-weight: bold;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+.popover-content {
+  min-width: 180px;
+}
+
+</style>
+</head>
+<body>
+<div class="container-fluid">
+
+<div class="row-fluid">
+  <div class="span12">
+    <div id="map" class="map"></div>
+  </div>
+</div>
+<div style="display: none;">
+  <!-- Clickable label for Vienna -->
+
+  <div id="marker" title="Marker"></div>
+  <!-- Popup -->
+  <div id="popup" title="Welcome to ol3"></div>
+</div>
+
+</div>
+<script>
+   
+var layer = new ol.layer.Tile({
+  source: new ol.source.OSM()
+});
+
+
+
+
+
+
+
+
+
+// Popup showing the position the user clicked
+
+
+
+
+
+</script>
+<div id="test"></div>
+</body>
+</html>
